@@ -139,6 +139,7 @@ a:hover {
 				@include flex-display;
 				@include flex-direction(row);
 				@include justify-content(center);
+				margin-top: 50px;
 				.home-profile {
 					width: 450px;
 					margin: auto;
