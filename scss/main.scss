@@ -31,7 +31,7 @@ h2 {
 }
 h3 {
 	font-family:Helvetica;
-	font-size:2.35em;
+	font-size:1.3em;
 	margin:0;
 }
 p {
@@ -112,27 +112,38 @@ a:hover {
 	}
 	main {
 		section.hero-image {
-			// background-attachment: fixed;
-			padding: 100px 40px;
-			background-position:top top;
+			position: relative;
+			background-position: top top;
 			background-size: cover;
+			background-attachment: fixed;
 			height: 500px;
 			width: 100%;
 			border: 1px solid #979797;
 			border-left: none;
 			border-right: none;
-			// box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
-			.index {
-				background-image: url(../images/hero-image.jpg);
+
+			.hero-image-headline {
+				position: absolute;
+				right: 0px;
+				bottom: 20px;
+				padding: 20px 50px;
+				background-color: $white;
+				opacity: 0.8;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+				text-align: right;
 			}
-			.blog {
-				background-image: url(../images/hero-image-blog.jpg);
-			}
+		}
+		section.hero-image.index {
+			background-image: url(../images/hero-image.jpg);
+		}
+		section.hero-image.blog {
+			background-image: url(../images/hero-image-blog.jpg);
 		}
 
 		section.content {
 			@include flex-display;
-			@include flex-direction-row;
+			@include flex-direction-column;
 			@include justify-content(center);
 			min-width: 700px;
 			.home-profile-container {
@@ -142,7 +153,7 @@ a:hover {
 				margin-top: 72px;
 				.home-profile {
 					width: 408px;
-					margin: auto;
+					margin: auto 0px;
 					padding-right: 48px;
 					.header {
 						h1 { 
@@ -171,9 +182,9 @@ a:hover {
 				}
 			}
 
-			.blog-container {
+			.blog-featured-container {
 				position: relative;
-				margin: 10px 0px;
+				margin: 0px;
 				height: 270px;
 				width: 100%;
 				border: 1px solid $border;
@@ -190,6 +201,25 @@ a:hover {
 					border-top-left-radius: 5px;
 					border-bottom-left-radius: 5px;
 					text-align: right;
+				}
+			}
+			.blog-featured-container.blog1 {
+				background-image: url(../images/hero-image-blog.jpg);
+			}
+
+			.blog-container {
+				position: relative;
+				background-color: $black;
+				margin:10px 0px;
+				height: 200px;
+				width: 320px;
+				.headline {
+					position: absolute;
+					padding: 12px;
+					width: 100%;
+					bottom: 12px;
+					background-color: $white;
+					opacity: 0.8;
 				}
 			}
 

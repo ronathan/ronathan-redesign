@@ -22,7 +22,7 @@ h2 {
 
 h3 {
   font-family: Helvetica;
-  font-size: 2.35em;
+  font-size: 1.3em;
   margin: 0; }
 
 p {
@@ -115,29 +115,40 @@ a:hover {
       .container .navbar .navbar-menu .menu-item:hover {
         color: #5C5C5C; }
   .container main section.hero-image {
-    padding: 100px 40px;
+    position: relative;
     background-position: top top;
     background-size: cover;
+    background-attachment: fixed;
     height: 500px;
     width: 100%;
     border: 1px solid #979797;
     border-left: none;
     border-right: none; }
-    .container main section.hero-image .index {
-      background-image: url(../images/hero-image.jpg); }
-    .container main section.hero-image .blog {
-      background-image: url(../images/hero-image-blog.jpg); }
+    .container main section.hero-image .hero-image-headline {
+      position: absolute;
+      right: 0px;
+      bottom: 20px;
+      padding: 20px 50px;
+      background-color: #FFFFFF;
+      opacity: 0.8;
+      border-top-left-radius: 5px;
+      border-bottom-left-radius: 5px;
+      text-align: right; }
+  .container main section.hero-image.index {
+    background-image: url(../images/hero-image.jpg); }
+  .container main section.hero-image.blog {
+    background-image: url(../images/hero-image-blog.jpg); }
   .container main section.content {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    -webkit-box-orient: horizontal;
+    -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
-    -webkit-flex-direction: row;
-    -ms-flex-direction: row;
-    flex-direction: row;
+    -webkit-flex-direction: column;
+    -ms-flex-direction: column;
+    flex-direction: column;
     -webkit-box-pack: center;
     -webkit-justify-content: center;
     -ms-flex-pack: center;
@@ -161,7 +172,7 @@ a:hover {
       margin-top: 72px; }
       .container main section.content .home-profile-container .home-profile {
         width: 408px;
-        margin: auto;
+        margin: auto 0px;
         padding-right: 48px; }
         .container main section.content .home-profile-container .home-profile .header h1 {
           text-align: right; }
@@ -180,16 +191,16 @@ a:hover {
         border-radius: 50%;
         height: 300px;
         width: 300px; }
-    .container main section.content .blog-container {
+    .container main section.content .blog-featured-container {
       position: relative;
-      margin: 10px 0px;
+      margin: 0px;
       height: 270px;
       width: 100%;
       border: 1px solid #979797;
       border-left: none;
       border-right: none;
       background-color: #5C5C5C; }
-      .container main section.content .blog-container .featured-headline {
+      .container main section.content .blog-featured-container .featured-headline {
         position: absolute;
         right: 0px;
         bottom: 20px;
@@ -199,5 +210,20 @@ a:hover {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         text-align: right; }
+    .container main section.content .blog-featured-container.blog1 {
+      background-image: url(../images/hero-image-blog.jpg); }
+    .container main section.content .blog-container {
+      position: relative;
+      background-color: #5C5C5C;
+      margin: 10px 0px;
+      height: 200px;
+      width: 320px; }
+      .container main section.content .blog-container .headline {
+        position: absolute;
+        padding: 12px;
+        width: 100%;
+        bottom: 12px;
+        background-color: #FFFFFF;
+        opacity: 0.8; }
 
 /*# sourceMappingURL=main.css.map */
