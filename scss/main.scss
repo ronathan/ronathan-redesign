@@ -56,25 +56,20 @@ a:hover {
 	color: $black;
 }
 .container {
-	display: flex;
-	display: -webkit-flex;
-	flex-direction: column;
-	-webkit-flex-direction: column;
+	@include flex-display;
+	@include flex-direction-column;
 	width: 100%;
 
 	.navbar {
-		display: flex;
-		display: -webkit-flex;
-		flex-direction: row;
-		-webkit-flex-direction: row;
-		justify-content: space-between;
-		-webkit-justify-content: space-between;
+		@include flex-display;
+		@include flex-direction-row;
+		@include justify-content(space-between);
 		width: 100%;
 		height: 72px;
 		padding: 12px 36px;
 		
 		.navbar-title {
-			align-items: flex-start;
+			@include flex-align-items-start;
 
 			margin: auto 0px;
 			.navbar-logo {
@@ -87,10 +82,9 @@ a:hover {
 		}
 
 		.navbar-menu {
-			align-items: flex-end;
 
 			@include flex-display;
-			@include flex-direction(row);
+			@include flex-direction-row;
 			position: relative;
 			width: auto;
 			margin: auto 0px;
@@ -133,12 +127,12 @@ a:hover {
 
 		section.content {
 			@include flex-display;
-			@include flex-direction(row);
+			@include flex-direction-row;
 			@include justify-content(center);
 			min-width: 700px;
 			.home-profile-container {
 				@include flex-display;
-				@include flex-direction(row);
+				@include flex-direction-row;
 				@include justify-content(center);
 				margin-top: 72px;
 				.home-profile {
