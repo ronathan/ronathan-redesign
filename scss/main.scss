@@ -116,13 +116,18 @@ a:hover {
 			padding: 100px 40px;
 			background-position:top top;
 			background-size: cover;
-			background-image: url(../images/hero-image.jpg);
 			height: 500px;
 			width: 100%;
 			border: 1px solid #979797;
 			border-left: none;
 			border-right: none;
 			// box-shadow: 0px 2px 4px 0px rgba(0,0,0,0.50);
+			.index {
+				background-image: url(../images/hero-image.jpg);
+			}
+			.blog {
+				background-image: url(../images/hero-image-blog.jpg);
+			}
 		}
 
 		section.content {

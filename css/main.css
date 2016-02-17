@@ -118,12 +118,15 @@ a:hover {
     padding: 100px 40px;
     background-position: top top;
     background-size: cover;
-    background-image: url(../images/hero-image.jpg);
     height: 500px;
     width: 100%;
     border: 1px solid #979797;
     border-left: none;
     border-right: none; }
+    .container main section.hero-image .index {
+      background-image: url(../images/hero-image.jpg); }
+    .container main section.hero-image .blog {
+      background-image: url(../images/hero-image-blog.jpg); }
   .container main section.content {
     display: -webkit-box;
     display: -moz-box;
