@@ -12,6 +12,26 @@
 	}
 }
 
+@media (max-width: 780px) {
+	.container {
+		main {
+			section.home-profile-container {
+				.home-profile {
+					padding-left: 0;
+					text-align: center;
+					align-self: flex-start;
+
+					.header {
+						hr {
+							width: 400px;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+
 @media (max-width: 669px) {
 	h1 {
 		font-size: 2.35em;
@@ -24,6 +44,15 @@
 	}
 	.container {
 		main {
+			section.home-profile-container {
+				.home-profile {
+					.header {
+						hr {
+							width: 320px;
+						}
+					}
+				}
+			}
 			section.content {
 				.blog-featured-container {
 					.featured-headline {

@@ -73,9 +73,12 @@ a:hover {
     -webkit-justify-content: space-between;
     -ms-flex-pack: space-between;
     justify-content: space-between;
+    position: fixed;
+    z-index: 10;
     width: 100%;
     height: 72px;
-    padding: 12px 36px; }
+    padding: 12px 36px;
+    background-color: #FFFFFF; }
     .container .navbar .navbar-title {
       -webkit-box-align: start;
       -webkit-align-items: flex-start;
@@ -116,31 +119,7 @@ a:hover {
         color: #FD2608; }
       .container .navbar .navbar-menu .menu-item:hover {
         color: #5C5C5C; }
-  .container main section.hero-image {
-    position: relative;
-    background-position: top top;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 500px;
-    width: 100%;
-    border: 1px solid #979797;
-    border-left: none;
-    border-right: none; }
-    .container main section.hero-image .hero-image-headline {
-      position: absolute;
-      right: 0px;
-      bottom: 20px;
-      padding: 20px 50px;
-      background-color: #FFFFFF;
-      opacity: 0.8;
-      border-top-left-radius: 5px;
-      border-bottom-left-radius: 5px;
-      text-align: right; }
-  .container main section.hero-image.index {
-    background-image: url(../images/hero-image.jpg); }
-  .container main section.hero-image.blog {
-    background-image: url(../images/hero-image-blog.jpg); }
-  .container main section.content {
+  .container main {
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
@@ -155,7 +134,9 @@ a:hover {
     -webkit-justify-content: center;
     -ms-flex-pack: center;
     justify-content: center; }
-    .container main section.content .home-profile-container {
+    .container main section {
+      padding: 48px 24px; }
+    .container main section.home-profile-container {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -170,29 +151,64 @@ a:hover {
       -webkit-justify-content: center;
       -ms-flex-pack: center;
       justify-content: center;
-      margin-top: 72px; }
-      .container main section.content .home-profile-container .home-profile {
-        width: 408px;
-        margin: auto 0px;
-        padding-right: 48px; }
-        .container main section.content .home-profile-container .home-profile .header h1 {
-          text-align: right; }
-        .container main section.content .home-profile-container .home-profile .header hr {
-          margin: 0px;
-          border-top: 2px solid #3DA1CE; }
-        .container main section.content .home-profile-container .home-profile .subtext {
-          margin-top: 12px;
-          margin-left: 144px; }
-          .container main section.content .home-profile-container .home-profile .subtext p {
-            font-weight: bold; }
-      .container main section.content .home-profile-container .home-profile-picture {
+      -webkit-box-align: center;
+      -webkit-align-items: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+      height: 100%; }
+      .container main section.home-profile-container .home-profile-picture {
         background-image: url("../images/profile-photo.jpg");
         background-size: cover;
         border: 1px solid #979797;
         border-radius: 50%;
         height: 300px;
         width: 300px; }
-    .container main section.content .blog-featured-container {
+      .container main section.home-profile-container .home-profile {
+        width: 432px;
+        padding-left: 48px; }
+        .container main section.home-profile-container .home-profile .header hr {
+          margin: 0px auto;
+          border-top: 2px solid #3DA1CE; }
+        .container main section.home-profile-container .home-profile .subtext {
+          margin-top: 12px;
+          font-style: italic; }
+          .container main section.home-profile-container .home-profile .subtext p {
+            font-weight: semi-bold; }
+            .container main section.home-profile-container .home-profile .subtext p a {
+              font-weight: bold; }
+    .container main section.home-dev-stack {
+      background-color: #F0F0F0;
+      height: 500px; }
+      .container main section.home-dev-stack h2 {
+        text-align: center; }
+      .container main section.home-dev-stack div.dev-stack-container {
+        display: -webkit-box;
+        display: -moz-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-orient: horizontal;
+        -webkit-box-direction: normal;
+        -webkit-flex-direction: row;
+        -ms-flex-direction: row;
+        flex-direction: row;
+        -webkit-box-pack: center;
+        -webkit-justify-content: center;
+        -ms-flex-pack: center;
+        justify-content: center;
+        -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+        margin-top: 48px; }
+        .container main section.home-dev-stack div.dev-stack-container div.dev-stack-item {
+          min-width: 200px; }
+          .container main section.home-dev-stack div.dev-stack-container div.dev-stack-item h3 span {
+            margin-right: 5px;
+            color: #3DA1CE; }
+    .container main section.blog-featured-container {
       position: relative;
       margin: 0px;
       height: 270px;
@@ -200,8 +216,9 @@ a:hover {
       border: 1px solid #979797;
       border-left: none;
       border-right: none;
-      background-color: #5C5C5C; }
-      .container main section.content .blog-featured-container .featured-headline {
+      background-color: #5C5C5C;
+      margin-top: 72px; }
+      .container main section.blog-featured-container .featured-headline {
         position: absolute;
         right: 0px;
         bottom: 20px;
@@ -211,9 +228,7 @@ a:hover {
         border-top-left-radius: 5px;
         border-bottom-left-radius: 5px;
         text-align: right; }
-    .container main section.content .blog-featured-container.blog1 {
-      background-image: url(../images/hero-image-blog.jpg); }
-    .container main section.content .blog-items-container {
+    .container main section.blog-items-container {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -231,14 +246,14 @@ a:hover {
       flex-wrap: wrap;
       padding: 5px;
       margin: 0 auto; }
-      .container main section.content .blog-items-container .blog-container {
+      .container main section.blog-items-container .blog-container {
         position: relative;
         background-color: #5C5C5C;
         margin: 5px 5px;
         height: 200px;
         width: 32%;
         min-width: 300px; }
-        .container main section.content .blog-items-container .blog-container .headline {
+        .container main section.blog-items-container .blog-container .headline {
           position: absolute;
           padding: 12px;
           width: 100%;

@@ -29,6 +29,13 @@
     justify-content: $type;
 }
 
+@mixin flex-align-items($type) {
+    -webkit-box-align: $type;
+    -webkit-align-items: $type;
+    -ms-flex-align: $type;
+    align-items: $type;
+}
+
 @mixin flex-align-items-start {
 	-webkit-box-align: start;
     -webkit-align-items: flex-start;
@@ -43,4 +50,9 @@
     -ms-flex-align: end;
     -ms-grid-row-align: flex-end;
     align-items: flex-end;
+}
+@mixin flex-wrap($type) {
+    -webkit-flex-wrap: $type;
+    -ms-flex-wrap: $type;
+    flex-wrap: $type;
 }
