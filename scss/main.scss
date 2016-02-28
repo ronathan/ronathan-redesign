@@ -145,7 +145,6 @@ a:hover {
 			@include flex-display;
 			@include flex-direction-column;
 			@include justify-content(center);
-			min-width: 700px;
 			.home-profile-container {
 				@include flex-display;
 				@include flex-direction-row;
@@ -207,22 +206,30 @@ a:hover {
 				background-image: url(../images/hero-image-blog.jpg);
 			}
 
-			.blog-container {
-				position: relative;
-				background-color: $black;
-				margin:10px 0px;
-				height: 200px;
-				width: 320px;
-				.headline {
-					position: absolute;
-					padding: 12px;
-					width: 100%;
-					bottom: 12px;
-					background-color: $white;
-					opacity: 0.8;
+			.blog-items-container {
+				@include flex-display;
+				@include flex-direction-row;
+				@include justify-content(center);
+				flex-wrap: wrap;
+				padding: 5px;
+				margin: 0 auto;
+				.blog-container {
+					position: relative;
+					background-color: $black;
+					margin: 5px 5px;
+					height: 200px;
+					width: 32%;
+					min-width: 320px;
+					.headline {
+						position: absolute;
+						padding: 12px;
+						width: 100%;
+						bottom: 12px;
+						background-color: $white;
+						opacity: 0.8;
+					}
 				}
 			}
-
 		}
 	}
 }

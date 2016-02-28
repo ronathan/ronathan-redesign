@@ -1,0 +1,5 @@
+@media (max-width: 670px) {
+  .container section.content .blog-items-container .blog-container {
+    width: 100% !important; } }
+
+/*# sourceMappingURL=mediaqueries.css.map */
