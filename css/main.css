@@ -112,6 +112,8 @@ a:hover {
         color: #3DA1CE; }
       .container .navbar .navbar-menu .menu-item.green-highlight {
         color: #029326; }
+      .container .navbar .navbar-menu .menu-item.red-highlight {
+        color: #FD2608; }
       .container .navbar .navbar-menu .menu-item:hover {
         color: #5C5C5C; }
   .container main section.hero-image {
@@ -235,7 +237,7 @@ a:hover {
         margin: 5px 5px;
         height: 200px;
         width: 32%;
-        min-width: 320px; }
+        min-width: 300px; }
         .container main section.content .blog-items-container .blog-container .headline {
           position: absolute;
           padding: 12px;

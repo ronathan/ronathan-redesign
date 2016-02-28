@@ -3,6 +3,7 @@
 $black: #5C5C5C;
 $blue: #3DA1CE;
 $green: #029326;
+$red: #FD2608;
 $border: #979797;
 $white: #FFFFFF;
 
@@ -104,6 +105,9 @@ a:hover {
 			}
 			.menu-item.green-highlight {
 				color: $green;
+			}
+			.menu-item.red-highlight {
+				color: $red;
 			}
 			.menu-item:hover {
 				color: $black;
@@ -219,7 +223,7 @@ a:hover {
 					margin: 5px 5px;
 					height: 200px;
 					width: 32%;
-					min-width: 320px;
+					min-width: 300px;
 					.headline {
 						position: absolute;
 						padding: 12px;
