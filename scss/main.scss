@@ -1,9 +1,11 @@
 @import "mixins";
 
+$dark-black: #000000;
 $black: #5C5C5C;
 $blue: #3DA1CE;
 $green: #029326;
 $red: #FD2608;
+$yellow: #FFD800;
 $border: #979797;
 $grey: #F0F0F0;
 $white: #FFFFFF;
@@ -17,7 +19,7 @@ $white: #FFFFFF;
 	font-family: 'Roboto', sans-serif;
 }
 body {
-	font-size:14px;
+	font-size:16px;
 	font-family: Helvetica;
 	color: $black;
 }
@@ -125,7 +127,7 @@ a:hover {
 
 		// Home Page Sections
 		section {
-			padding: 96px 24px;
+			padding: 48px 76px;
 		}
 		section.home-profile-container {
 			@include flex-display;
@@ -143,7 +145,7 @@ a:hover {
 				width: 300px;
 			}
 			.home-profile {
-				width: 432px;
+				width: 384px;
 				padding-left: 48px;
 				.header {
 					hr{
@@ -163,12 +165,51 @@ a:hover {
 				}
 			}
 		}
-
+		section.home-about-me {
+			@include flex-display;
+			@include flex-direction-row-reverse;
+			@include justify-content(center);
+			@include flex-align-items(center);
+			@include flex-wrap(wrap);
+			background-color: $blue;
+			color: $white;
+			div.about-me-image {
+				background-image: url('../images/about-me.jpg');
+				background-color: $white;
+				background-size: cover;
+				border: 3px solid $yellow;
+				border-radius: 10px;
+				height: 300px;
+				width: 400px;
+			}
+			div.about-me-text {
+				text-align: right;
+				margin-right: 48px;
+				width: 480px;
+				h2 {
+					color: $yellow;
+				}
+				p {
+					margin: 12px 0;
+					font-style: italic;
+					font-weight: normal;
+					span {
+						color: $yellow;
+						font-weight: bold;
+					}
+				}
+			}
+		}
 		section.home-dev-stack {
 			background-color: $grey;
-			h1 {
-				text-align: center;
-				color: $blue;
+			div.dev-stack-text {
+				h2 {
+					text-align: center;
+					color: $blue;
+				}
+				p {
+					color: $grey;
+				}
 			}
 			div.dev-stack-container {
 				@include flex-display;
@@ -190,7 +231,7 @@ a:hover {
 						height: auto;
 						padding: 24px 12px;
 						width: 192px;
-						border: 5px solid $blue;
+						border: 3px solid $blue;
 						border-radius: 10px;
 						text-align: center;
 						margin: 12px 24px;
@@ -201,7 +242,7 @@ a:hover {
 								color: $blue;
 							}
 							h3 {
-								margin-top: 12px;
+								margin-top: 20px;
 								color: $blue;
 							}
 							ul {
@@ -214,6 +255,54 @@ a:hover {
 									margin: 4px 0px;
 								}
 							}
+						}
+					}
+				}
+			}
+		}
+
+		section.home-contact {
+			div.contact-text {
+				text-align: center;
+			}
+			div.contact-social-media {
+				@include flex-display;
+				@include flex-direction-row;
+				@include justify-content(center);
+				@include flex-wrap(wrap);
+				margin-top: 48px;
+
+				div.social-media-item {
+					@include flex-display;
+					@include flex-direction-row;
+					@include flex-align-items(center);
+					background-color: $white;
+					border: 1px solid $blue;
+					margin: 2px;
+					padding: 12px 12px;
+					width: 24%;
+					min-width: 290px;
+					div.item-logo {
+						height: 56px;
+						width: 56px;
+						span {
+							color: $blue;
+							font-size: 3em;
+						}
+					}
+					div.item-writeup {
+						@include flex-display;
+						@include flex-direction-column;
+						@include justify-content(center);
+						margin-left: 6px;
+						h3 {
+							color: $blue;
+							font-size: 1em;
+						}
+						p {
+							font-style: italic;
+							font-weight: normal;
+							color: $black;
 						}
 					}
 				}
@@ -247,7 +336,7 @@ a:hover {
 			@include flex-display;
 			@include flex-direction-row;
 			@include justify-content(center);
-			flex-wrap: wrap;
+			@include flex-wrap(wrap);
 			padding: 5px;
 			margin: 0 auto;
 			.blog-container {

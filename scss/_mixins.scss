@@ -22,6 +22,14 @@
     flex-direction: row;
 }
 
+@mixin flex-direction-row-reverse {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+    -webkit-flex-direction: row-reverse;
+    -ms-flex-direction: row-reverse;
+    flex-direction: row-reverse;
+}
+
 @mixin justify-content($type) {
 	-webkit-box-pack: $type;
 	-webkit-justify-content: $type;

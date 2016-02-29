@@ -1,3 +1,5 @@
+@import "mixins";
+
 @media (min-width: 670px) and (max-width: 940px) {
 	.container {
 		main {
@@ -6,6 +8,24 @@
 					.blog-container {
 						width: 48%;
 					}
+				}
+			}
+		}
+	}
+}
+
+@media (max-width: 975px) {
+	.container {
+		main {
+			section.home-about-me {
+				@include flex-direction-column;
+				div.about-me-image {
+					width: 100%;
+				}
+				div.about-me-text {
+					text-align: center;
+					margin: 24px 0px;
+					width: 100%;
 				}
 			}
 		}
