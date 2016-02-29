@@ -33,7 +33,7 @@ h2 {
 }
 h3 {
 	font-family:Helvetica;
-	font-size:1.3em;
+	font-size:1.35em;
 	margin:0;
 }
 p {
@@ -125,7 +125,7 @@ a:hover {
 
 		// Home Page Sections
 		section {
-			padding: 48px 24px;
+			padding: 96px 24px;
 		}
 		section.home-profile-container {
 			@include flex-display;
@@ -166,26 +166,55 @@ a:hover {
 
 		section.home-dev-stack {
 			background-color: $grey;
-			height: 500px;
-			h2 {
+			h1 {
 				text-align: center;
+				color: $blue;
 			}
 			div.dev-stack-container {
 				@include flex-display;
-				@include flex-direction-row;
+				@include flex-direction-column;
 				@include justify-content(center);
+				@include flex-align-items(center);
 				@include flex-wrap(wrap);
 				margin-top: 48px;
-				div.dev-stack-item {
-					min-width: 200px;
-					h3 {
-						span {
-							margin-right: 5px;
-							color: $blue;
-						}
-					}
-					ul {
+				div.dev-headings {
+					@include flex-display;
+					@include flex-direction-row;
+					@include justify-content(center);
+					@include flex-wrap(wrap);
+
+					div.dev-stack-item {
+						@include flex-display;
+						@include flex-direction-column;
 						
+						height: auto;
+						padding: 24px 12px;
+						width: 192px;
+						border: 5px solid $blue;
+						border-radius: 10px;
+						text-align: center;
+						margin: 12px 24px;
+						background-color: $white;
+						.dev-stack-item-contents {
+							span {
+								font-size: 3em;
+								color: $blue;
+							}
+							h3 {
+								margin-top: 12px;
+								color: $blue;
+							}
+							ul {
+								margin: 0;
+								padding: 0;
+								list-style: none;
+								margin-top: 12px;
+								font-style: italic;
+								li {
+									margin: 4px 0px;
+								}
+							}
+						}
 					}
 				}
 			}
