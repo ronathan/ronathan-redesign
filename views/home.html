@@ -1,0 +1,103 @@
+<!-- Home.HTML-->
+<section class="home-profile-container">
+	<div class="home-profile-picture">
+		
+	</div>
+	<div class="home-profile">
+		<div class="header">
+			<h1>Ronathan</h1>
+			<hr/>
+		</div>
+		<div class="subtext">
+			<p>
+				App Engineer at <a href="https://www.nascentdigital.com" target="_blank" class="blue-highlight">Nascent Digital</a>.<br/>
+				<a href="https://www.hackeryou.com" target="_blank" class="blue-highlight">
+					HackerYou
+				</a> Cohort Zero.<br/>
+				Fantasy Basketball Junkie.
+			</p>
+		</div>
+	</div>
+</section>
+<section class="home-about-me">
+	<div class="about-me-image">
+	</div>
+	<div class="about-me-text">
+		<h2>
+			Hi there! I'm Ronald.
+		</h2>
+		<p>
+			I'm a <span>Materials Engineer</span> turned <span>Full-Stack Developer</span> from <span>Toronto, ON</span>. I made my start in development by attending a Rails bootcamp at <span>HackerYou</span> three years ago. Today I focus mostly on <span>Windows UWP</span> applications (C#/XAML) and <span>front-end development</span> using frameworks like Angular and Node.
+		</p>
+		<p>
+			In my spare time you can find me blogging about <span>life and code</span>, cheering on the <span>Toronto Raptors</span>, or playing <span>trampoline dodgeball</span>. 
+		</p>
+	</div>
+</section>
+<section class="home-dev-stack" ng-controller="DevStackController as dev">
+	<div class="dev-stack-text">
+		<h2>
+			The Development Stack
+		</h2>
+		<p>
+			I've been a developer for about 3 years now. Below are the tools I use on a regular basis.
+		</p>
+	</div>
+	<div class="dev-stack-container">
+		<div class="dev-headings">
+			<dev-stack ng-repeat="stack in dev.devStacks">
+			</dev-stack>
+		</div>
+	</div>
+</section>
+<section class="home-contact">
+	<div class="contact-text">
+		<h2>Let's Connect!</h2>
+	</div>
+	<div class="contact-social-media">
+		<div class="social-media-item">
+			<div class="item-logo">
+				<span class="icon-twitter"></span>
+			</div>
+			<div class="item-writeup">
+				<h3>Follow me on Twitter!</h3>
+				<p>
+					@ronathanV
+				</p>
+			</div>
+		</div>
+		<div class="social-media-item">
+			<div class="item-logo">
+				<span class="icon-linkedin"></span>
+			</div>
+			<div class="item-writeup">
+				<h3>See where I've worked.</h3>
+				<p>
+					ronaldvictorino
+				</p>
+			</div>
+		</div>
+		<div class="social-media-item">
+			<div class="item-logo">
+				<span class="icon-github"></span>
+			</div>
+			<div class="item-writeup">
+				<h3>See my code.</h3>
+				<p>
+					ronathan
+				</p>
+			</div>
+		</div>
+		<div class="social-media-item">
+			<div class="item-logo">
+				<span class="icon-mail3"></span>
+			</div>
+			<div class="item-writeup">
+				<h3>Any other questions?</h3>
+				<p>
+					ronaldvictorino@gmail.com
+				</p>
+			</div>
+		</div>
+	</div>
+</section>

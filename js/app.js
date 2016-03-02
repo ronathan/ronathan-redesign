@@ -2,22 +2,38 @@
 	// Angular Code
 	var app = angular.module('ronathan', []);
 
-	app.controller('HomeController', function() {
-		this.home = home;
-	});
+	app.controller("NavbarController", function() {
+		this.navbar = 1;
 
-	app.controller('BlogController', function() {
-		this.blogs = blogs;
+		this.selectNavbar = function(setNavbar) {
+			this.navbar = setNavbar;
+		};
+
+		this.isSelected = function(checkNavbar) {
+			return this.navbar === checkNavbar;
+		};
 	});
 
 	app.controller('DevStackController', function() {
 		this.devStacks = devStacks;
 	});
 
+	app.directive('home', function() {
+		return {
+			restrict: "E",
+			templateUrl: "../views/home.html"
+		};
+	});
+	app.directive('blog', function() {
+		return {
+			restrict: "E",
+			templateUrl: "../views/blog.html"
+		};
+	});
 	app.directive('devStack', function() {
 		return {
-			restrict: 'E',
-			templateUrl: '../views/dev-stack.html'
+			restrict: "E",
+			templateUrl: "../views/_dev-stack.html"
 		};
 	});
 

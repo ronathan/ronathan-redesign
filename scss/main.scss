@@ -210,7 +210,9 @@ a:hover {
 					color: $blue;
 				}
 				p {
-					color: $grey;
+					text-align:center;
+					color: $blue;
+					margin: 12px 0;
 				}
 			}
 			div.dev-stack-container {
@@ -230,7 +232,6 @@ a:hover {
 						@include flex-display;
 						@include flex-direction-column;
 						
-						height: auto;
 						padding: 24px 12px;
 						width: 192px;
 						border: 3px solid $blue;
