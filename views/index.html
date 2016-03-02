@@ -1,11 +1,11 @@
-<html>
+<html ng-app="ronathan">
 
 <head>
 <link href='https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700,900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" type="text/css" href="css/normalize.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="css/main.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="css/mediaqueries.css" media="screen"/>
-	<link rel="stylesheet" type="text/css" href="css/icomoon.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../css/normalize.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../css/main.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../css/mediaqueries.css" media="screen"/>
+	<link rel="stylesheet" type="text/css" href="../css/icomoon.css" media="screen"/>
 </head>
 
 <body>
@@ -16,7 +16,7 @@
 				<div class="navbar-logo">
 				</div>
 				<div class="navbar-header">
-					Ronathan
+					Ronathan {{1 + 1}}
 				</div>
 			</div>
 			<div class="navbar-menu">
@@ -67,7 +67,7 @@
 					</p>
 				</div>
 			</section>
-			<section class="home-dev-stack">
+			<section class="home-dev-stack" ng-controller="DevStackController as dev">
 				<div class="dev-stack-text">
 					<h2>
 						The Development Stack
@@ -78,46 +78,8 @@
 				</div>
 				<div class="dev-stack-container">
 					<div class="dev-headings">
-						<div class="dev-stack-item">
-							<div class="dev-stack-item-contents">
-								<span class="icon-embed2"></span> 
-								<h3>Languages</h3>
-								<ul>
-									<li>HTML / CSS</li>
-									<li>JavaScript</li>
-									<li>C#</li>
-									<li>XAML</li>
-									<li>Java</li>
-									<li>Ruby</li>
-								</ul>
-							</div>
-						</div>
-						<div class="dev-stack-item">
-							<div class="dev-stack-item-contents">
-								<span class="icon-share2"></span>
-								<h3>Frameworks</h3>
-								<ul>
-									<li>SASS / LESS</li>
-									<li>NodeJS</li>
-									<li>AngularJS</li>
-									<li>Windows UWP</li>
-									<li>Grails</li>
-									<li>Rails</li>
-								</ul>
-							</div>
-						</div>
-						<div class="dev-stack-item">
-							<div class="dev-stack-item-contents">
-								<span class="icon-wrench"></span>
-								<h3>Other Tools</h3>
-								<ul>
-									<li>Git</li>
-									<li>SQL</li>
-									<li>AWS</li>
-									<li>BASH</li>
-								</ul>
-							</div>
-						</div>
+						<dev-stack ng-repeat="stack in dev.devStacks">
+						</dev-stack>
 					</div>
 				</div>
 			</section>
@@ -174,8 +136,9 @@
 			</section>
 		</main>
 	</div>
-	<script src="js/angular.min.js"></script>
-	<script src="js/main.js"></script>
+	<script src="../js/angular.min.js"></script>
+	<script src="../js/app.js"></script>
+	<script src="../js/main.js"></script>
 </body>
 
 </html>
