@@ -135,7 +135,7 @@ a:hover {
     -ms-flex-pack: center;
     justify-content: center; }
     .container main section {
-      padding: 48px 76px; }
+      padding: 48px 48px; }
     .container main section.home-profile-container {
       display: -webkit-box;
       display: -moz-box;
@@ -210,11 +210,13 @@ a:hover {
         border: 3px solid #FFD800;
         border-radius: 10px;
         height: 300px;
-        width: 400px; }
+        width: 420px;
+        max-width: 420px; }
       .container main section.home-about-me div.about-me-text {
         text-align: right;
         margin-right: 48px;
-        width: 480px; }
+        width: 480px;
+        max-width: 480px; }
         .container main section.home-about-me div.about-me-text h2 {
           color: #FFD800; }
         .container main section.home-about-me div.about-me-text p {

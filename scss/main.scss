@@ -127,7 +127,7 @@ a:hover {
 
 		// Home Page Sections
 		section {
-			padding: 48px 76px;
+			padding: 48px 48px;
 		}
 		section.home-profile-container {
 			@include flex-display;
@@ -180,12 +180,14 @@ a:hover {
 				border: 3px solid $yellow;
 				border-radius: 10px;
 				height: 300px;
-				width: 400px;
+				width: 420px;
+				max-width: 420px;
 			}
 			div.about-me-text {
 				text-align: right;
 				margin-right: 48px;
 				width: 480px;
+				max-width: 480px;
 				h2 {
 					color: $yellow;
 				}

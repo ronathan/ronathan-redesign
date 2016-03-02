@@ -1,7 +1,7 @@
 @media (min-width: 670px) and (max-width: 940px) {
   .container main section.content .blog-items-container .blog-container {
     width: 48%; } }
-@media (max-width: 975px) {
+@media (max-width: 1099px) {
   .container main section.home-about-me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
