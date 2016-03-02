@@ -98,24 +98,23 @@ a:hover {
 			.menu-item {
 				cursor: pointer;
 				text-align: center;
+				font-weight: bold;
 				padding: 4px 8px;
 				margin: auto 8px;
 				font-size: 1em;
+				@include color-transition(0.4s);
 			}
-			.menu-item.underline {
+			.menu-item.active {
 				border-bottom: 1px solid;
 			}
-			.menu-item.blue-highlight {
+			#menu-home.menu-item.active {
 				color: $blue;
 			}
-			.menu-item.green-highlight {
+			#menu-home.menu-item:hover {
+				color: $blue;
+			}
+			#menu-blog.menu-item.active {
 				color: $green;
-			}
-			.menu-item.red-highlight {
-				color: $red;
-			}
-			.menu-item:hover {
-				color: $black;
 			}
 		}
 	}
@@ -129,14 +128,14 @@ a:hover {
 		section {
 			padding: 48px 48px;
 		}
-		section.home-profile-container {
+		section#home-profile {
 			@include flex-display;
 			@include flex-direction-row;
 			@include justify-content(center);
 			@include flex-align-items(center);
 			@include flex-wrap(wrap);
 			height: 100%;
-			.home-profile-picture {
+			#home-profile-picture {
 				background-image: url("../images/profile-photo.jpg");
 				background-size: cover;
 				border: 1px solid $border;
@@ -144,16 +143,17 @@ a:hover {
 				height: 300px;
 				width: 300px;
 			}
-			.home-profile {
+			#home-profile-text {
+				@include animation-delay(1s);
 				width: 384px;
 				padding-left: 48px;
-				.header {
+				.home-header {
 					hr{
 						margin: 0px auto;
 						border-top: 2px solid $blue;
 					}
 				}
-				.subtext {
+				.home-subtext {
 					margin-top: 12px;
 					font-style: italic;
 					p {
@@ -165,7 +165,7 @@ a:hover {
 				}
 			}
 		}
-		section.home-about-me {
+		section#home-about-me {
 			@include flex-display;
 			@include flex-direction-row-reverse;
 			@include justify-content(center);
@@ -173,7 +173,7 @@ a:hover {
 			@include flex-wrap(wrap);
 			background-color: $blue;
 			color: $white;
-			div.about-me-image {
+			div#about-me-picture {
 				background-image: url('../images/about-me.jpg');
 				background-color: $white;
 				background-size: cover;
@@ -183,7 +183,7 @@ a:hover {
 				width: 420px;
 				max-width: 420px;
 			}
-			div.about-me-text {
+			div#about-me-text {
 				text-align: right;
 				margin-right: 48px;
 				width: 480px;

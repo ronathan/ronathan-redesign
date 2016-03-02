@@ -1,3 +1,5 @@
+/* FlexBox Mixins */
+/* Animation Mixins */
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
@@ -106,19 +108,23 @@ a:hover {
       .container .navbar .navbar-menu .menu-item {
         cursor: pointer;
         text-align: center;
+        font-weight: bold;
         padding: 4px 8px;
         margin: auto 8px;
-        font-size: 1em; }
-      .container .navbar .navbar-menu .menu-item.underline {
+        font-size: 1em;
+        -webkit-transition: color 0.4s;
+        -moz-transition: color 0.4s;
+        -ms-transition: color 0.4s;
+        -o-transition: color 0.4s;
+        transition: color 0.4s; }
+      .container .navbar .navbar-menu .menu-item.active {
         border-bottom: 1px solid; }
-      .container .navbar .navbar-menu .menu-item.blue-highlight {
+      .container .navbar .navbar-menu #menu-home.menu-item.active {
         color: #3DA1CE; }
-      .container .navbar .navbar-menu .menu-item.green-highlight {
+      .container .navbar .navbar-menu #menu-home.menu-item:hover {
+        color: #3DA1CE; }
+      .container .navbar .navbar-menu #menu-blog.menu-item.active {
         color: #029326; }
-      .container .navbar .navbar-menu .menu-item.red-highlight {
-        color: #FD2608; }
-      .container .navbar .navbar-menu .menu-item:hover {
-        color: #5C5C5C; }
   .container main {
     display: -webkit-box;
     display: -moz-box;
@@ -136,7 +142,7 @@ a:hover {
     justify-content: center; }
     .container main section {
       padding: 48px 48px; }
-    .container main section.home-profile-container {
+    .container main section#home-profile {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -159,27 +165,32 @@ a:hover {
       -ms-flex-wrap: wrap;
       flex-wrap: wrap;
       height: 100%; }
-      .container main section.home-profile-container .home-profile-picture {
+      .container main section#home-profile #home-profile-picture {
         background-image: url("../images/profile-photo.jpg");
         background-size: cover;
         border: 1px solid #979797;
         border-radius: 50%;
         height: 300px;
         width: 300px; }
-      .container main section.home-profile-container .home-profile {
+      .container main section#home-profile #home-profile-text {
+        -webkit-animation-delay: 1s;
+        -moz-animation-delay: 1s;
+        -ms-animation-delay: 1s;
+        -o-animation-delay: 1s;
+        animation-delay: 1s;
         width: 384px;
         padding-left: 48px; }
-        .container main section.home-profile-container .home-profile .header hr {
+        .container main section#home-profile #home-profile-text .home-header hr {
           margin: 0px auto;
           border-top: 2px solid #3DA1CE; }
-        .container main section.home-profile-container .home-profile .subtext {
+        .container main section#home-profile #home-profile-text .home-subtext {
           margin-top: 12px;
           font-style: italic; }
-          .container main section.home-profile-container .home-profile .subtext p {
+          .container main section#home-profile #home-profile-text .home-subtext p {
             font-weight: semi-bold; }
-            .container main section.home-profile-container .home-profile .subtext p a {
+            .container main section#home-profile #home-profile-text .home-subtext p a {
               font-weight: bold; }
-    .container main section.home-about-me {
+    .container main section#home-about-me {
       display: -webkit-box;
       display: -moz-box;
       display: -ms-flexbox;
@@ -203,7 +214,7 @@ a:hover {
       flex-wrap: wrap;
       background-color: #3DA1CE;
       color: #FFFFFF; }
-      .container main section.home-about-me div.about-me-image {
+      .container main section#home-about-me div#about-me-picture {
         background-image: url("../images/about-me.jpg");
         background-color: #FFFFFF;
         background-size: cover;
@@ -212,18 +223,18 @@ a:hover {
         height: 300px;
         width: 420px;
         max-width: 420px; }
-      .container main section.home-about-me div.about-me-text {
+      .container main section#home-about-me div#about-me-text {
         text-align: right;
         margin-right: 48px;
         width: 480px;
         max-width: 480px; }
-        .container main section.home-about-me div.about-me-text h2 {
+        .container main section#home-about-me div#about-me-text h2 {
           color: #FFD800; }
-        .container main section.home-about-me div.about-me-text p {
+        .container main section#home-about-me div#about-me-text p {
           margin: 12px 0;
           font-style: italic;
           font-weight: normal; }
-          .container main section.home-about-me div.about-me-text p span {
+          .container main section#home-about-me div#about-me-text p span {
             color: #FFD800;
             font-weight: bold; }
     .container main section.home-dev-stack {
