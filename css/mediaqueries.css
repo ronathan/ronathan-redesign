@@ -4,24 +4,24 @@
   .container main section.content .blog-items-container .blog-container {
     width: 48%; } }
 @media (max-width: 1099px) {
-  .container main section.home-about-me {
+  .container main section#home-about-me {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
     -webkit-flex-direction: column;
     -ms-flex-direction: column;
     flex-direction: column; }
-    .container main section.home-about-me div.about-me-image {
+    .container main section#home-about-me div#about-me-image {
       width: 100%; }
-    .container main section.home-about-me div.about-me-text {
+    .container main section#home-about-me div#about-me-text {
       text-align: center;
       margin: 24px 0px;
       width: 100%; } }
 @media (max-width: 780px) {
-  .container main section.home-profile-container .home-profile {
+  .container main section#home-profile #home-profile-text {
     padding-left: 0;
     text-align: center;
     align-self: flex-start; }
-    .container main section.home-profile-container .home-profile .header hr {
+    .container main section#home-profile #home-profile-text .header hr {
       width: 400px; } }
 @media (max-width: 669px) {
   h1 {
@@ -33,7 +33,7 @@
   h3 {
     font-size: 1.15em; }
 
-  .container main section.home-profile-container .home-profile .header hr {
+  .container main section#home-profile #home-profile-text .header hr {
     width: 320px; }
   .container main section.content .blog-featured-container .featured-headline {
     text-align: center;

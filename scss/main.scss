@@ -59,6 +59,9 @@ a.green-highlight {
 a:hover {
 	color: $black;
 }
+.hidden {
+	opacity: 0;
+}
 .container {
 	@include flex-display;
 	@include flex-direction-column;
@@ -144,7 +147,7 @@ a:hover {
 				width: 300px;
 			}
 			#home-profile-text {
-				@include animation-delay(1s);
+				@include animation-delay(0.2s);
 				width: 384px;
 				padding-left: 48px;
 				.home-header {
@@ -173,6 +176,9 @@ a:hover {
 			@include flex-wrap(wrap);
 			background-color: $blue;
 			color: $white;
+			.hidden {
+				opacity: 0;
+			}
 			div#about-me-picture {
 				background-image: url('../images/about-me.jpg');
 				background-color: $white;
@@ -184,6 +190,7 @@ a:hover {
 				max-width: 420px;
 			}
 			div#about-me-text {
+				@include animation-delay(0.2s);
 				text-align: right;
 				margin-right: 48px;
 				width: 480px;

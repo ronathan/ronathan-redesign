@@ -48,6 +48,9 @@ a.green-highlight {
 a:hover {
   color: #5C5C5C; }
 
+.hidden {
+  opacity: 0; }
+
 .container {
   display: -webkit-box;
   display: -moz-box;
@@ -173,11 +176,11 @@ a:hover {
         height: 300px;
         width: 300px; }
       .container main section#home-profile #home-profile-text {
-        -webkit-animation-delay: 1s;
-        -moz-animation-delay: 1s;
-        -ms-animation-delay: 1s;
-        -o-animation-delay: 1s;
-        animation-delay: 1s;
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        animation-delay: 0.2s;
         width: 384px;
         padding-left: 48px; }
         .container main section#home-profile #home-profile-text .home-header hr {
@@ -214,6 +217,8 @@ a:hover {
       flex-wrap: wrap;
       background-color: #3DA1CE;
       color: #FFFFFF; }
+      .container main section#home-about-me .hidden {
+        opacity: 0; }
       .container main section#home-about-me div#about-me-picture {
         background-image: url("../images/about-me.jpg");
         background-color: #FFFFFF;
@@ -224,6 +229,11 @@ a:hover {
         width: 420px;
         max-width: 420px; }
       .container main section#home-about-me div#about-me-text {
+        -webkit-animation-delay: 0.2s;
+        -moz-animation-delay: 0.2s;
+        -ms-animation-delay: 0.2s;
+        -o-animation-delay: 0.2s;
+        animation-delay: 0.2s;
         text-align: right;
         margin-right: 48px;
         width: 480px;

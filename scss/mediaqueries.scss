@@ -17,12 +17,12 @@
 @media (max-width: 1099px) {
 	.container {
 		main {
-			section.home-about-me {
+			section#home-about-me {
 				@include flex-direction-column;
-				div.about-me-image {
+				div#about-me-image {
 					width: 100%;
 				}
-				div.about-me-text {
+				div#about-me-text {
 					text-align: center;
 					margin: 24px 0px;
 					width: 100%;
@@ -35,8 +35,8 @@
 @media (max-width: 780px) {
 	.container {
 		main {
-			section.home-profile-container {
-				.home-profile {
+			section#home-profile {
+				#home-profile-text {
 					padding-left: 0;
 					text-align: center;
 					align-self: flex-start;
@@ -64,8 +64,8 @@
 	}
 	.container {
 		main {
-			section.home-profile-container {
-				.home-profile {
+			section#home-profile {
+				#home-profile-text {
 					.header {
 						hr {
 							width: 320px;
