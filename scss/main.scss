@@ -108,7 +108,7 @@ a:hover {
 				padding: 4px 8px;
 				margin: auto 8px;
 				font-size: 1em;
-				@include color-transition(0.4s);
+				@include transition(color, 0.4s);
 			}
 			.menu-item.active {
 				border-bottom: 1px solid;
@@ -141,6 +141,7 @@ a:hover {
 			@include flex-align-items(center);
 			@include flex-wrap(wrap);
 			height: 100%;
+			margin-top: 48px;
 			#home-profile-picture {
 				background-image: url("../images/profile-photo.jpg");
 				background-size: cover;
@@ -288,6 +289,8 @@ a:hover {
 					@include flex-display;
 					@include flex-direction-row;
 					@include flex-align-items(center);
+					@include transition(background-color, 0.4s);
+					cursor: pointer;
 					background-color: $white;
 					border: 1px solid $blue;
 					margin: 2px;
@@ -317,6 +320,9 @@ a:hover {
 							color: $black;
 						}
 					}
+				}
+				div.social-media-item:hover {
+					background-color: $grey;
 				}
 			}
 		}

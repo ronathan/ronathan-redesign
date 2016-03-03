@@ -68,12 +68,12 @@
 }
 
 /* Animation Mixins */
-@mixin color-transition($val) {
+@mixin transition($val, $timeInt) {
     -webkit-transition: color $val;
-    -moz-transition: color $val;
-    -ms-transition: color $val;
-    -o-transition: color $val;
-    transition: color $val;
+    -moz-transition: $val $timeInt;
+    -ms-transition: $val $timeInt;
+    -o-transition: $val $timeInt;
+    transition: $val $timeInt;
 }
 
 @mixin animation-delay($val) {
