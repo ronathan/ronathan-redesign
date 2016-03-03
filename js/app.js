@@ -33,7 +33,7 @@
 	app.directive('devStack', function() {
 		return {
 			restrict: "E",
-			templateUrl: "../views/_dev-stack.html"
+			templateUrl: "../views/_devstack.html"
 		};
 	});
 

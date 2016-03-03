@@ -5,6 +5,9 @@
   -moz-box-sizing: border-box;
   box-sizing: border-box; }
 
+.hidden {
+  opacity: 0; }
+
 @font-face {
   font-family: 'Roboto', sans-serif; }
 body {
@@ -217,8 +220,6 @@ a:hover {
       flex-wrap: wrap;
       background-color: #3DA1CE;
       color: #FFFFFF; }
-      .container main section#home-about-me .hidden {
-        opacity: 0; }
       .container main section#home-about-me div#about-me-picture {
         background-image: url("../images/about-me.jpg");
         background-color: #FFFFFF;
@@ -247,16 +248,16 @@ a:hover {
           .container main section#home-about-me div#about-me-text p span {
             color: #FFD800;
             font-weight: bold; }
-    .container main section.home-dev-stack {
+    .container main section#home-dev-stack {
       background-color: #F0F0F0; }
-      .container main section.home-dev-stack div.dev-stack-text h2 {
+      .container main section#home-dev-stack div.dev-stack-text h2 {
         text-align: center;
         color: #3DA1CE; }
-      .container main section.home-dev-stack div.dev-stack-text p {
+      .container main section#home-dev-stack div.dev-stack-text p {
         text-align: center;
         color: #3DA1CE;
         margin: 12px 0; }
-      .container main section.home-dev-stack div.dev-stack-container {
+      .container main section#home-dev-stack div.dev-stack-container {
         display: -webkit-box;
         display: -moz-box;
         display: -ms-flexbox;
@@ -279,7 +280,7 @@ a:hover {
         -ms-flex-wrap: wrap;
         flex-wrap: wrap;
         margin-top: 48px; }
-        .container main section.home-dev-stack div.dev-stack-container div.dev-headings {
+        .container main section#home-dev-stack div.dev-stack-container div.dev-headings {
           display: -webkit-box;
           display: -moz-box;
           display: -ms-flexbox;
@@ -297,7 +298,7 @@ a:hover {
           -webkit-flex-wrap: wrap;
           -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
-          .container main section.home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item {
+          .container main section#home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item {
             display: -webkit-box;
             display: -moz-box;
             display: -ms-flexbox;
@@ -309,25 +310,26 @@ a:hover {
             -ms-flex-direction: column;
             flex-direction: column;
             padding: 24px 12px;
+            height: auto;
             width: 192px;
             border: 3px solid #3DA1CE;
             border-radius: 10px;
             text-align: center;
             margin: 12px 24px;
             background-color: #FFFFFF; }
-            .container main section.home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents span {
+            .container main section#home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents span {
               font-size: 3em;
               color: #3DA1CE; }
-            .container main section.home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents h3 {
+            .container main section#home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents h3 {
               margin-top: 20px;
               color: #3DA1CE; }
-            .container main section.home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents ul {
+            .container main section#home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents ul {
               margin: 0;
               padding: 0;
               list-style: none;
               margin-top: 12px;
               font-style: italic; }
-              .container main section.home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents ul li {
+              .container main section#home-dev-stack div.dev-stack-container div.dev-headings div.dev-stack-item .dev-stack-item-contents ul li {
                 margin: 4px 0px; }
     .container main section.home-contact div.contact-text {
       text-align: center; }
