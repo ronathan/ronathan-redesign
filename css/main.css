@@ -373,13 +373,21 @@ a:hover {
         -ms-transition: background-color 0.4s;
         -o-transition: background-color 0.4s;
         transition: background-color 0.4s;
-        cursor: pointer;
+        position: relative;
         background-color: #FFFFFF;
         border: 1px solid #3DA1CE;
+        cursor: pointer;
         margin: 2px;
         padding: 12px 12px;
         width: 24%;
         min-width: 290px; }
+        .container main section.home-contact div.contact-social-media div.social-media-item a span {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          top: 0;
+          left: 0;
+          z-index: 1; }
         .container main section.home-contact div.contact-social-media div.social-media-item div.item-logo {
           height: 56px;
           width: 56px; }

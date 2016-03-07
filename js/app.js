@@ -48,6 +48,7 @@
 	var devStacks = [
 		{
 			type: "Languages",
+			icon: "icon-embed2",
 			items: [
 				"HTML/CSS",
 				"JavaScript",
@@ -59,6 +60,7 @@
 		},
 		{
 			type: "Frameworks",
+			icon: "icon-stack",
 			items: [
 				"SASS / LESS",
 				"NodeJS",
@@ -70,6 +72,7 @@
 		},
 		{
 			type: "Other Tools",
+			icon: "icon-cog",
 			items: [
 				"Git",
 				"SQL",

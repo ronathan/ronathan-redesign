@@ -290,13 +290,25 @@ a:hover {
 					@include flex-direction-row;
 					@include flex-align-items(center);
 					@include transition(background-color, 0.4s);
-					cursor: pointer;
+					
+					position: relative;
 					background-color: $white;
 					border: 1px solid $blue;
+					cursor: pointer;
 					margin: 2px;
 					padding: 12px 12px;
 					width: 24%;
 					min-width: 290px;
+					a {
+						span {
+							position: absolute;
+							width: 100%;
+							height: 100%;
+							top: 0;
+							left: 0;
+							z-index: 1;
+						}
+					}
 					div.item-logo {
 						height: 56px;
 						width: 56px;
